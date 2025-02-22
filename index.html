@@ -24,20 +24,18 @@
       <h2 class="text-center text-2xl font-semibold mt-3">Mvelo Mthembu</h2>
       <p class="text-center text-gray-600 mt-1">Web Developer</p>
       <div class="flex justify-center mt-5">
-        <a href="#" class="text-blue-500 hover:text-blue-700 mx-3"><i class="fa-brands fa-square-x-twitter"></i></a>
-        <a href="#" class="text-blue-500 hover:text-blue-700 mx-3"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="#" class="text-blue-500 hover:text-blue-700 mx-3"><i class="fa-brands fa-github"></i></a>
-        <a href="#" class="text-blue-500 hover:text-blue-700 mx-3"><i class="fa-solid fa-envelope"></i></i></a>
+        <a href="https://www.x.com/therealmvelo" target="_blank" class="text-blue-500 hover:text-blue-700 mx-3"><i class="fa-brands fa-square-x-twitter"></i></a>
+        <a href="https://www.github.com/therealmvelo" target="_blank" class="text-blue-500 hover:text-blue-700 mx-3"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:mvelondumisomthembu@gmail.com" class="text-blue-500 hover:text-blue-700 mx-3"><i class="fa-solid fa-envelope"></i></i></a>
         
       </div>
       <div class="mt-5">
         <h3 class="text-xl font-semibold">Bio</h3>
-        <p class="text-black mt-2">John is a software engineer with over 10 years of experience in developing web and mobile applications. He is skilled in JavaScript, React, and Node.js.</p>
-        <nav class="flex flex-grow bg-rose-500 rounded mt-2 knewave-regular">
-          <button class="grow text-gray-600 py-4 px-6 block hover:text-blue-500 focus:outline-none">Skils</button>    
-          <button class="grow text-gray-600 py-4 px-6 block hover:text-blue-500 focus:outline-none knewave-regular">Projects</button>
-          <button class="grow text-gray-600 py-4 px-6 block hover:text-blue-500 focus:outline-none">Hobbies</button>                                     
-          <!--text-gray-600 py-4 px-6 block hover:text-blue-500 focus:outline-none text-blue-500 border-b-2 font-medium border-blue-500-->
+        <p class="text-black mt-2">i'm a web developer with a variaty of skills ranging from networking, i'm something of a scientist myself</p>
+        <nav class="flex flex-grow bg-rose-500 rounded mt-4 knewave-regular">
+          <button onclick="openTab(event,'Skills')" class="tablink grow text-gray-600 py-4 px-6 block hover:text-blue-500 focus:outline-none active">Skills</button>    
+          <button onclick="openTab(event,'Projects')" class="tablink grow text-gray-600 py-4 px-6 block hover:text-blue-500 focus:outline-none">Projects</button>
+          <button onclick="openTab(event,'Hobbies')" class="tablink grow text-gray-600 py-4 px-6 block hover:text-blue-500 focus:outline-none">Hobbies</button>                                     
       </nav>
       </div>
     </div>
@@ -48,15 +46,20 @@
         <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
     </svg>
 </div>
-<!--div class="custom-shape-divider-bottom-1740204095 bg-green-300">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-    </svg>
-</div-->
+
 
 <div class="div w-full mx-auto bg-green-300 rounded-lg shadow-md p-5 mt-0">
-  <h2 class="text-center text-2xl font-semibold mb-4">Projects</h2>
-  <div class="w-5/6 rounded rounded-sm shadow-md mb-4 text-center mx-auto bg-white p-5">
+  <div id="Skills" class="tabContent">
+      <h2 class="text-center text-2xl font-semibold m-4">Skills</h2>
+  </div>
+  <div id="Projects" class="tabContent" style="display:none;">
+      <h2 class="text-center text-2xl font-semibold m-4">Projects</h2>
+  </div>
+  <div id="Hobbies" class="tabContent" style="display:none;">
+      <h2 class="text-center text-2xl font-semibold m-4">Hobbies</h2>
+  </div>
+</div>
+  <!--div class="w-5/6 rounded rounded-sm shadow-md mb-4 text-center mx-auto bg-white p-5">
     
     <div class="mt-5">
       <h3 class="text-xl font-semibold">Project 1</h3>
@@ -65,7 +68,8 @@
       <p class="text-black mt-2">This is another project that I worked on recently. It is a mobile application that allows users to track their fitness goals.</p>
     </div>
   </div>
-</div>
+</div-->
 
+<script src="index.js"></script>
 </body>
 </html>
